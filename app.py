@@ -28,7 +28,7 @@ def set_mobile_optimized_bg(bin_file):
         content: "";
         position: absolute;
         top: 0; left: 0; width: 100%; height: 100%;
-        background-color: rgba(255, 240, 245, 0.5); 
+        background-color: rgba(255, 240, 245, 0.8); 
         z-index: -1;
     }}
 
@@ -58,7 +58,7 @@ except:
 
 # 3. [수정] 앱 콘텐츠 - 제목 크기를 80%로 조절
 # font-size: 80%; 부분을 추가했습니다.
-st.markdown("<h1 style='text-align: center; color: #FF69B4; font-size: 80%;'>🍱 러닝 후 오늘의 보상!</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #FF69B4; font-size: 20%;'>🍱 러닝 후 오늘의 보상!</h1>", unsafe_allow_html=True)
 
 # 추천 메뉴 구역
 st.markdown("#### 💡 이런 메뉴 어때요?")
