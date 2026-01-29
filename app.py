@@ -59,7 +59,7 @@ st.markdown('<p class="main-title">🍱 러닝 후 오늘의 보상!</p>', unsaf
 
 # 추천 메뉴 구역
 st.markdown("#### 💡 이런 보상은 어때요?")
-KOREAN_MENUS = ["삼겹살", "돼지갈비", "김치찌개", "비빔밥", "제육볶음", "떡볶이", "치킨", "마라탕", "초밥", "돈가스", "짬뽕", "햄버거", "냉면", "피자"]
+KOREAN_MENUS = ["삼겹살", "돼지갈비", "족발", "소고기", "제육볶음", "떡볶이", "치킨", "마라탕", "탕수육", "돈까스", "김밥", "햄버거", "국밥", "피자", "아구찜", "백반", "생선조림", "수육", "오뎅"]
 sugg = random.sample(KOREAN_MENUS, 5)
 st.success(f"✨ {', '.join(sugg)}")
 
@@ -72,7 +72,7 @@ st.divider()
 st.markdown("#### ✨ 후보 입력 (2개 이상)")
 entries = []
 for i in range(5):
-    entries.append(st.text_input(f"보상 후보 {i+1}", key=f"m_{i}", placeholder="예: 아이스 아메리카노"))
+    entries.append(st.text_input(f"보상 후보 {i+1}", key=f"m_{i}", placeholder="예: 삼겹살"))
 
 st.write("") 
 
